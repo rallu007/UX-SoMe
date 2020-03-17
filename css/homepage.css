@@ -1,0 +1,32 @@
+.body_homepage {
+    background-color: #242424;
+
+    color: white;
+    font-family: vista-sans, sans-serif;
+    font-style: normal;
+}
+.title_homepage{
+    text-align: center;
+    font-size: 50px;
+}
+.title_section{
+}
+.menu_options_section{
+    display: flex;
+}
+.div{
+   height: 500px;
+    width: 600px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.games_div{
+    background-color: #ffa41b;
+}
+.music_div{
+    background-color: #ff5151;
+}
+.events_div{
+    background-color: #9818d6;
+    margin-right: 36px;
+}
