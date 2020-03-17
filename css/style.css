@@ -1,0 +1,60 @@
+/* COLORS
+
+#242424 - dark grey
+#FFA41B - orange
+#595959 - lighter grey
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: vista-sans, sans-serif;
+    font-size: 20px;s
+}
+
+a  {
+    text-decoration: none;
+    color: black;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    margin: 23px 45px;
+}
+
+header a {
+    display: block;
+}
+
+header img {
+    height: 40px;
+    margin: 20px 0;
+    position: absolute;
+}
+
+h1 {
+/*
+    color: white;
+    text-align: center;
+    font-size: 69px;
+    margin: 10px 0;
+    display: inline;
+    width: 200px;
+    flex: 5;
+    margin-left: -40px;
+*/
+    color: white;
+    margin: auto;
+    font-size: 69px;
+
+}
+
+
+
