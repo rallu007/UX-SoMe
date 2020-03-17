@@ -10,12 +10,23 @@
     font-size: 50px;
 }
 .title_section{
-    display: flex;
-    margin-left: 40%;
-
 }
-.home_icon{
- width: 70px;
- height: 60px;
- margin-top: 3%;
+.menu_options_section{
+    display: flex;
+}
+.div{
+   height: 500px;
+    width: 600px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.games_div{
+    background-color: #ffa41b;
+}
+.music_div{
+    background-color: #ff5151;
+}
+.events_div{
+    background-color: #9818d6;
+    margin-right: 36px;
 }
