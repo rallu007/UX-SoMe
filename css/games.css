@@ -6,46 +6,8 @@
 
 */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: vista-sans, sans-serif;
-    font-size: 20px;
     background-color: #242424;
-}
-
-a  {
-    text-decoration: none;
-    color: black;
-}
-
-/*HEADER*/
-
-header {
-    display: flex;
-    margin: 10px 45px;
-}
-
-header img {
-    height: 40px;
-    margin: 30px 0;
-    display: inline;
-    flex: 0;
-    z-index: 10;
-}
-
-h1 {
-    color: white;
-    text-align: center;
-    font-size: 69px;
-    margin: 10px 0;
-    display: inline;
-    flex: 5;
-    margin-left: -40px;
 }
 
 /*MAIN*/
@@ -95,6 +57,7 @@ section img {
 
 section h3 {
     text-align: center;
+    font-weight: 500;
 }
 
 
@@ -112,6 +75,7 @@ section h3 {
 .menu_item img {
     margin: 30px auto 0;
     display: block;
+    height: 80px;
 }
 
 .menu_games {
