@@ -5,28 +5,55 @@
     font-family: vista-sans, sans-serif;
     font-style: normal;
 }
-.title_homepage{
+
+.title_homepage {
     text-align: center;
     font-size: 50px;
 }
-.title_section{
-}
-.menu_options_section{
+
+.title_section {}
+
+.menu_options_section {
     display: flex;
 }
-.div{
-   height: 500px;
-    width: 600px;
-    margin-left: 30px;
+
+.div {
+    height: 480px;
+    width: 650px;
+    margin-left: 20px;
     border-radius: 20px;
+    margin-top: 5%;
 }
-.games_div{
+
+.games_div {
     background-color: #ffa41b;
+    margin-left:36px;
 }
-.music_div{
+
+.music_div {
     background-color: #ff5151;
 }
-.events_div{
+
+.events_div {
     background-color: #9818d6;
     margin-right: 36px;
+}
+
+.title_div {
+    text-align: center;
+    font-family: vista-sans, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 22%;
+
+
+}
+
+.icon {
+    position: relative;
+    margin-left: 23%;
+    width: 160px;
+    height: 160px;
+    margin-top: 30%;
+
 }
