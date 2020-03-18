@@ -1,0 +1,137 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+/* COLORS
+#242424 - dark grey
+#ff5050 - red
+#595959 - lighter grey
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: vista-sans, sans-serif;
+    font-size: 20px;
+    background-color: #242424;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    margin: 10px 45px;
+}
+
+info {
+    float: right;
+}
+
+.info {
+    position: absolute;
+    margin-bottom: 3px;
+    right: 0;
+    margin-right: 50px;
+}
+
+header img {
+    height: 40px;
+    margin: 30px 0;
+    display: inline;
+    flex: 0;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 69px;
+    margin: 10px 0;
+    display: inline;
+    flex: 5;
+    margin-left: -40px;
+}
+
+/*MAIN*/
+
+main {
+    background-color: #ff5050;
+    height: 510px;
+    /*important*/
+    -webkit-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
+    box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
+    z-index: 10;
+    position: relative;
+}
+
+.games_sections {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.spotify {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+section {
+    background-color: white;
+    height: 460px;
+    /*important*/
+    width: 460px;
+    margin: 25px 0;
+    border-radius: 15px;
+}
+
+section h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+/*MENU*/
+
+.menu_item {
+    background-color: #595959;
+    display: inline-block;
+    width: 29.5%;
+    height: 120px;
+    border-radius: 15px;
+    margin: -15px 15px 0 0;
+
+}
+
+.menu_music {
+    background-color: #ff5050;
+}
+
+.menu_item img {
+    margin: 30px auto 0;
+    display: block;
+}
+
+.menu_games {
+    margin-left: 40px;
+}
+
+.menu_events {
+    margin-right: 0;
+}
+
+nav a {
+    display: block;
+}
