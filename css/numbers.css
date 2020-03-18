@@ -1,0 +1,27 @@
+body{
+    background-color: #FFA41B;
+    font-family: vista-sans, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.top{
+    display: flex;
+}
+.arrow_image{
+    max-width: 9%;
+    margin-top: 12px;
+    margin-left: 10%;
+}
+.title{
+    font-size: 50px;
+    margin-left: -12%;
+    margin-top: 50px;
+}
+.info_image{
+    max-width: 60%;
+    margin-top: 20px;
+
+}
+.info{
+    margin-left: 30%;
+}
