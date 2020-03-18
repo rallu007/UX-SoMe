@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Numbers Game</title>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta description="This game is absolutely perfect for those who want to have a good time with their friends and have the chance to win a beer for free. Here are the rules: who draws the highest number has to buy a beer for every player. ">
     <link rel="stylesheet" href="https://use.typekit.net/ysx7uoo.css">
     <link rel="stylesheet" href="../css/numbers.css">
     <link rel="stylesheet" href="https://use.typekit.net/ysx7uoo.css">
 </head>
+
 <body>
+    <!--title section begins-->
     <section class="top">
-    <div class="arrow"><img src="../images/back.svg" alt="back_arrow" class="arrow_image"></div>
-    <h1 class="title">Numbers</h1>
-    <div class="info"><img src="../images/info.png" alt="info" class="info_image"></div>
-
+        <div class="arrow"><img src="../images/back.svg" alt="back_arrow" class="arrow_image"></div>
+        <h1 class="title">Numbers</h1>
+        <div class="info"><button type="button" onclick="document.getElementById('modal_id').style.display='block';" class="button_dialog"><img src="../images/info.png" alt="info" class="info_image"></button></div>
     </section>
+<!--    title section ends -->
+<!--    here is the place of the random number container-->
+    <div class="game_container">
+        <p id="demo" class="random_number"></p>
+    </div>
+<!--    here it ends -->
+<!--refresh page button-->
+    <button onClick="window.location.reload();" class="button_draw">Draw a number</button>
 
-</body>
-</html>
+<!--end of refreshing page button-->
+
+<!--  Java generate random number  -->
+    <script>
+        document.getElementById("demo").innerHTML =
+            Math.floor(Math.random() * 100);
+    </script>
+<!--dialog starts-->
+    <div id="modal_id" class="modal animate">
+
+        <div class="modal_content">
+                    <span onclick="document.getElementById('modal_id').style.display='none';" class="close">&times;</span>
+
+            <h1 class="rules_title">How to play</h1>
+            <p class="rules_paragraph">Are you lucky and will drink for free? Or the fate will let you down and you will pay for the others?
+<br><br>
+Get a random number, the lowest one is paying. Simple as that. The more players, the higher chance for win. Good luck!</p>
+            <p class="rules_players">Minimum players: 2</p>
+
+        </div>
+<!--dialog ends-->
+
+
+    </div>
+
+
+            </body>
+            </html>
