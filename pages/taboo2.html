@@ -5,6 +5,7 @@
         <title>Taboo</title>
         <link rel="stylesheet" href="../css/taboo.css" />
         <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/numbers.css">
         <link rel="stylesheet" href="https://use.typekit.net/otf5qwy.css" />
     </head>
     <body>
@@ -12,7 +13,7 @@
             <a href="games.html"><img src="../images/back.svg" alt="Back Arrow" /></a>
             <img src="../images/female.svg" alt="Female Symbol" class="female-symbol">
             <h1 class="taboo2_h1">Girls' Round</h1>
-            <img src="../images/info.svg" alt="Info Icon" class="info-icon">
+            <div class="info"><button type="button" onclick="document.getElementById('modal_id').style.display='block';" class="button_dialog"><img src="../images/info.svg" alt="Info Icon" class="info-icon"></button></div>
         </header>
 <main>
 <section>
@@ -105,5 +106,29 @@
        }
 
         </script>
+            <div id="modal_id" class="modal animate">
+
+        <div class="modal_content">
+                    <span onclick="document.getElementById('modal_id').style.display='none';" class="close">&times;</span>
+
+            <h1 class="rules_title_taboo">How to play</h1><br><br>
+            <p class="rules_paragraph_taboo">Start from dividing into two teams. One team of boys and one
+                    of the girls. Why? Because we will check your knowledge from
+                    the terms connected with opposite sex.<br /><br />
+                    You draw a word that your other teammates have to guess.
+                    Below, there are few other words that you can’t use during
+                    explaining the main one. Of course you also can’t use the
+                    top one, not the part of that. You have two minutes to guess
+                    as much as you can. If it’s going very bad and no one can
+                    guess, you can skip to the next card. When the time’s up you
+                    can see your result. And then it’s the next team. Easy.
+                    Enjoy!</p><br><br>
+            <p class="rules_players_taboo">Minimum players: 2 teams of at least 2</p>
+
+        </div>
+<!--dialog ends-->
+
+
+    </div>
     </body>
 </html>
