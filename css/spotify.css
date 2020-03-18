@@ -18,38 +18,11 @@ body {
 
 /*HEADER*/
 
-header {
-    display: flex;
-    margin: 10px 45px;
-}
-
-info {
-    float: right;
-    height: 50px;
-}
-
 .info {
     position: absolute;
     margin-bottom: 3px;
     right: 0;
     margin-right: 50px;
-}
-
-header img {
-    height: 40px;
-    margin: 30px 0;
-    display: inline;
-    flex: 0;
-}
-
-h1 {
-    color: white;
-    text-align: center;
-    font-size: 69px;
-    margin: 10px 0;
-    display: inline;
-    flex: 5;
-    margin-left: -40px;
 }
 
 /*MAIN*/
