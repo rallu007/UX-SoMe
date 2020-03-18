@@ -11,8 +11,51 @@ body {
     background-color: #FFA41B;
 }
 
+.taboo2_h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
 /*TABOO 2*/
 
+.female-symbol {
+    height: 60px;
+    margin: 20px 240px;
+    top: 6px;
+}
+
+.info-icon {
+    right: 0;
+    margin-right: 45px;
+}
+
+.card_container {
+    background-color: white;
+    width: 50%;
+    margin: 50px auto 20px;
+    border-radius: 15px;
+}
+
+.card_container h2 {
+    font-size: 40px;
+    text-align: center;
+    background-color: #242424;
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.card_container p {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.underline {
+        border-bottom: 1px solid #242424;
+
+}
 
 
 
