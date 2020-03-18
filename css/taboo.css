@@ -6,9 +6,8 @@
 
 */
 
-
 body {
-    background-color: #FFA41B;
+    background-color: #ffa41b;
 }
 
 .taboo2_h1 {
@@ -44,7 +43,6 @@ body {
     padding: 20px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-
 }
 
 .card_container p {
@@ -53,9 +51,39 @@ body {
 }
 
 .underline {
-        border-bottom: 1px solid #242424;
-
+    border-bottom: 1px solid #242424;
 }
+
+.timeleft {
+    background-color: white;
+    padding: 20px 30px;
+    width: 285px;
+    display: inline-block;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 255px;
+}
+
+.next {
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    width: 210px;
+    display: inline-block;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
 
 
 
