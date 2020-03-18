@@ -25,7 +25,7 @@
     <p>Terrorist</p>
     </div>
     <div class="timeleft">Time left: <span id="countdown">2:00</span></div>
-    <div class="next" onclick="myFunction()">NEXT</div>
+    <div class="next" onclick="decideFunction()">NEXT</div>
     <div class="done"><a href="taboo3.html">Done</a></div>
 </section>
 </main>
@@ -48,11 +48,42 @@
            let mainWords = ["Counter Strike", "Ball", "Pirate", "Toilet", "Car"];
            let indexMainWords = Math.floor(Math.random() * mainWords.length);
            return mainWords[indexMainWords];
-       }
-
        if (indexMainWords == "Ball") {
            document.getElementById('otherword').innerHTML = "Hah";
        }
+       }
+
+       let goNext = () => {
+           window.location.href = "taboo3.html";
+       }
+
+       var times = 0;
+
+    var decideFunction = () => {
+        if(times === 0){
+            generateMainWord();
+            times++;
+        }
+        else if (times === 1) {
+             generateMainWord();
+            times++;
+        }
+        else if (times === 2) {
+             generateMainWord();
+            times++;
+        }
+        else if (times === 3) {
+             generateMainWord();
+            times++;
+        }
+        else {
+            goNext();
+        };
+
+    };
+
+
+
 
 //       COUNTDOWN
        const startingMinutes = 2;
