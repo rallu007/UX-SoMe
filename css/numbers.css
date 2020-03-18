@@ -79,7 +79,7 @@ body{
     box-shadow: 6px 6px 6px rgba(0,0,0,-0.8);
     margin-top: 13%;
     border-radius: 20px;
-    border: 3px black solid;
+
 
 
 }
@@ -109,7 +109,7 @@ body{
 }
 
 .animate{
-    animation: animatezoom 0.6s; /* call animatezoom keyframes*/
+    animation: animatezoom 0.5s; /* call animatezoom keyframes*/
 }
 /*@keyframes animatezoom {
     from{margin-left: 100%}
