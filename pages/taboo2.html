@@ -17,16 +17,64 @@
 <main>
 <section>
    <div class="card_container">
-    <h2>Counter Strike</h2>
-    <p class="underline">Game</p>
+    <h2 class="mainword">Counter Strike</h2>
+    <p class="underline otherword" id="otherword">Game</p>
     <p class="underline">Shoot</p>
     <p class="underline">Gun</p>
     <p class="underline">War</p>
     <p>Terrorist</p>
     </div>
-    <div class="timeleft">Time left:</div>
-    <div class="next">NEXT</div>
+    <div class="timeleft">Time left: <span id="countdown">2:00</span></div>
+    <div class="next" onclick="myFunction()">NEXT</div>
 </section>
 </main>
+
+   <script>
+        let myFunction = () => {
+     document.querySelector('.mainword').innerHTML = generateMainWord();
+
+//          document.querySelector('.otherword').innerHTML = generateOtherWord();
+        };
+
+//       window.onclick = () => {
+//     document.querySelector('.mainword').innerHTML = generateRandomMainWord();
+//        };
+
+
+       let generateMainWord = () => {
+           let mainWords = ["Counter Strike", "Ball", "Pirate", "Toilet", "Car"];
+           let indexMainWords = Math.floor(Math.random() * mainWords.length);
+           return mainWords[indexMainWords];
+       }
+
+       if (indexMainWords === 1) {
+           document.getElementById('otherword').innerHTML = "Hah";
+       }
+       const startingMinutes = 2;
+       let time = startingMinutes * 60;
+
+       const countdownEl = document.getElementById('countdown');
+
+       setInterval(updateCountdown, 1000);
+
+       function updateCountdown() {
+           const minutes = Math.floor(time / 60);
+           let seconds = time % 60;
+
+           seconds = seconds < 2 ? '0' + seconds : seconds;
+
+           countdownEl.innerHTML = `${minutes}: ${seconds}`;
+
+           time--;
+       }
+
+       function stopCountdown() {
+2
+            clearInterval(setIntvalID);
+3
+}
+
+
+        </script>
     </body>
 </html>
