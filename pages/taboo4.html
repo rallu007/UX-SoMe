@@ -26,7 +26,7 @@
     </div>
     <div class="timeleft">Time left: <span id="countdown">2:00</span></div>
     <div class="next" onclick="myFunction()">NEXT</div>
-    <div class="done"><a href="#">Done</a></div>
+    <div class="done"><a href="taboo5.html">Done</a></div>
 </section>
 </main>
 
@@ -45,14 +45,14 @@
 
 
        let generateMainWord = () => {
-           let mainWords = ["Counter Strike", "Ball", "Pirate", "Toilet", "Car"];
+           let mainWords = ["Mascara", "Menstruation", "Bralette", "Braid", "Purse"];
            let indexMainWords = Math.floor(Math.random() * mainWords.length);
            return mainWords[indexMainWords];
-       }
-
-       if (indexMainWords == "Ball") {
+       if (indexMainWords = "Mascara") {
            document.getElementById('otherword').innerHTML = "Hah";
        }
+       }
+
 
 //       COUNTDOWN
        const startingMinutes = 2;
@@ -72,6 +72,7 @@
 
            time--;
        }
+
 
         </script>
     </body>
