@@ -25,3 +25,18 @@ body{
 .info{
     margin-left: 30%;
 }
+.random_number{
+    font-size: 80px;
+    color: black;
+    text-align: center;
+    position: absolute;
+    margin-left: 20px;
+
+}
+.game_container{
+    width: 550px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 22%;
+}

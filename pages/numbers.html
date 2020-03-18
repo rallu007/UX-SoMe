@@ -3,19 +3,31 @@
 <head>
     <title>Numbers Game</title>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta description="This game is absolutely perfect for those who want to have a good time with their friends and have the chance to win a beer for free. Here are the rules: who draws the highest number has to buy a beer for every player. ">
     <link rel="stylesheet" href="https://use.typekit.net/ysx7uoo.css">
     <link rel="stylesheet" href="../css/numbers.css">
     <link rel="stylesheet" href="https://use.typekit.net/ysx7uoo.css">
 </head>
-<body>
+<body >
+
+<!--title section begins-->
     <section class="top">
     <div class="arrow"><img src="../images/back.svg" alt="back_arrow" class="arrow_image"></div>
     <h1 class="title">Numbers</h1>
     <div class="info"><img src="../images/info.png" alt="info" class="info_image"></div>
 
     </section>
+<div class="game_container">
+   <p id="demo" class="random_number"></p>
+
+    </div>
+<script>
+document.getElementById("demo").innerHTML =
+Math.floor(Math.random() * 100);
+
+</script
+
 
 </body>
 </html>
