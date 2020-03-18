@@ -80,11 +80,41 @@ body {
     cursor: pointer;
 }
 
-.lol {
-    display: none
+/*TIME OVER*/
+
+.timeover {
+    text-align: center;
+    margin-top: 270px;
 }
 
+.timeover h1, .timeover h2 {
+    margin-bottom: 20px;
+}
 
+.timeover h1 {
+    color: black;
+}
+
+.timeover h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.start-btn {
+    background-color: #242424;
+    padding: 20px 40px;
+    color: white;
+    border-radius: 15px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.start-btn a {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
 
 
