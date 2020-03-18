@@ -47,6 +47,7 @@ body {
 
 .card_container p {
     padding: 20px;
+    text-align: center;
     font-size: 30px;
 }
 
@@ -76,6 +77,11 @@ body {
     font-size: 30px;
     font-weight: 500;
     margin-left: 15px;
+    cursor: pointer;
+}
+
+.lol {
+    display: none
 }
 
 
