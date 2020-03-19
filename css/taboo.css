@@ -13,14 +13,14 @@ body {
 .taboo2_h1 {
     text-transform: uppercase;
     font-size: 50px;
-    margin-left: 31%;
+    margin-left: 35%;
 }
 
 /*TABOO 2*/
 
 .female-symbol {
     height: 55px;
-    margin: 20px 230px;
+    margin: 20px 260px;
     top: 6px;
 }
 
@@ -93,6 +93,8 @@ body {
 /*    background-color: #242424;*/
 /*    color: white;*/
     padding: 20px;
+    z-index: 10;
+    position: relative;
 }
 
 
@@ -103,7 +105,20 @@ body {
     text-align: center;
 /*    background-color: #242424;*/
     color: black;
-    padding: 20px;
+    padding: 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.box {
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: white;
+    height: 58px;
+    width: 350px;
+    position: absolute;
+    top: 182px;
+    left: 335px;
 }
 
 /*TIME OVER*/

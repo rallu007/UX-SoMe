@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -27,7 +28,6 @@
     </div>
     <div class="timeleft">Time left: <span id="countdown">2:00</span></div>
     <div class="next" onclick="decideFunction();">NEXT</div>
-    <div class="done"><a href="taboo3.html">Done</a></div>
 </section>
 </main>
 
@@ -39,10 +39,6 @@
 
 //          document.querySelector('.otherword').innerHTML = generateOtherWord();
         };
-
-//       window.onclick = () => {
-//     document.querySelector('.mainword').innerHTML = generateRandomMainWord();
-//        };
 
 
        let generateMainWord = () => {
@@ -59,7 +55,7 @@
            mtxt = document.getElementById('mainword');
 
  for (let b=0; b<mainWords.length; b++){
-//     b.style.fontWeight = 500;
+
 
  	mtxt.innerHTML +=
   + mainWords[b][0]
@@ -117,10 +113,6 @@ goNext.addEventListener('click', function() {
 
            time--;
        }
-//        if (distance < 0) {
-//    clearInterval(setInterval);
-//    document.getElementById("countdown").innerHTML = "EXPIRED";
-//  }
 
         </script>
             <div id="modal_id" class="modal animate">
