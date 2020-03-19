@@ -1,0 +1,123 @@
+/* COLORS
+
+#242424 - dark grey
+#FFA41B - orange
+#595959 - lighter grey
+#9818d6 - purple
+*/
+
+body {
+    background-color: #242424;
+}
+
+/*MAIN*/
+
+main {
+    background-color: #9818d6;
+    height: 510px; /*important*/
+    -webkit-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
+    box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
+    z-index: 10;
+    position: relative;
+}
+
+
+.events_sections {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 30px;
+}
+
+section {
+    background-color: white;
+    height: 460px; /*important*/
+    width: 460px;
+    margin: 25px 0;
+    border-radius: 15px;
+/*
+        -webkit-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
+    box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
+*/
+}
+
+section h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
+section img {
+    height: 270px;
+    margin: 40px auto 20px auto;
+    display: block;
+    margin-top: 0px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+section h3 {
+    text-align: center;
+    font-weight: 500;
+}
+
+section h4 {
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+section h5 {
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+section h6 {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    margin-bottom: 35px;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+/*MENU*/
+
+.menu_item {
+    background-color: #9818d6;
+    display: inline-block;
+    width: 29.5%;
+    height: 120px;
+    border-radius: 15px;
+    margin: -15px 15px 0 0;
+}
+
+.menu_item img {
+    margin: 30px auto 0;
+    display: block;
+    height: 80px;
+}
+
+.menu_games {
+    margin-left: 40px;
+    background-color: #595959;
+}
+
+.menu_music {
+    background-color: #595959;
+}
+
+.menu_events {
+    margin-right: 0;
+    background-color: #9818d6;
+}
+
+nav a {
+    display: block;
+}
