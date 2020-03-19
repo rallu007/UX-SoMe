@@ -4,20 +4,28 @@ body{
     font-size: 20px;
     color: white;
 }
-.top{
+.top {
     display: flex;
 }
+
+.top a {
+    display: block;
+}
+
 .arrow_image{
-    width: 50px;
-    height: 50px;
+    height: 40px;
+    margin: 20px 0;
     position: absolute;
+    margin: 23px 45px;
+/*
     top:3%;
     left: 3%;
+*/
 }
-.title{
-    font-size: 50px;
-    margin-left: 38%;
-    margin-top: 70px;
+.title {
+    font-size: 69px;
+    margin-left: 360px;
+    margin-top: 23px;
 }
 
 .random_number{
@@ -48,6 +56,7 @@ body{
     top: 68%;
     border-radius: 15px;
     border: 2px solid #242424;
+    font-family: vista-sans;
 }
 
 .button_dialog{
@@ -55,9 +64,11 @@ body{
     border: none;
 }
 .info_image{
-    width: 60px;
-    height: 60px;
-    margin-top: 16px;
+    position: absolute;
+    height: 50px;
+    margin-top: 15px;
+    margin-right: 45px;
+    right: 0;
 
 }
 .info{
