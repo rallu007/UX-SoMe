@@ -5,23 +5,21 @@
 #595959 - lighter grey
 #9818d6 - purple
 */
-
 body {
     background-color: #242424;
 }
 
 /*MAIN*/
-
 main {
     background-color: #9818d6;
-    height: 510px; /*important*/
+    height: 510px;
+    /*important*/
     -webkit-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
     -moz-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
     box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
     z-index: 10;
     position: relative;
 }
-
 
 .events_sections {
     display: flex;
@@ -31,11 +29,12 @@ main {
 
 section {
     background-color: white;
-    height: 460px; /*important*/
+    height: 460px;
+    /*important*/
     width: 460px;
     margin: 25px 0;
     border-radius: 15px;
-/*
+    /*
         -webkit-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
     -moz-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
     box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
@@ -87,6 +86,7 @@ section h6 {
     font-weight: 500;
     font-size: 20px;
 }
+
 /*MENU*/
 
 .menu_item {
@@ -122,27 +122,40 @@ nav a {
     display: block;
 }
 
+.modal {
+    display: none;
+    /*Hidden by default*/
+    position: fixed;
+    /* Stay always on top*/
+    z-index: 99;
+    /* Stay always on top*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full screen width*/
+    height: 100%;
+    /* Full screen height*/
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity */
+}
 
-.modal{
-    display: none; /*Hidden by default*/
-    position: fixed; /* Stay always on top*/
-    z-index: 99; /* Stay always on top*/
+.model {
+    display: none;
+    /*Hidden by default*/
+    position: fixed;
+    /* Stay always on top*/
+    z-index: 99;
+    /* Stay always on top*/
     left: 0;
     top: 0;
-    width:  100%; /* Full screen width*/
-    height: 100%; /* Full screen height*/
-    background-color: rgba(0,0,0,0.4);/* Black w/opacity */
+    width: 100%;
+    /* Full screen width*/
+    height: 100%;
+    /* Full screen height*/
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity */
 }
-.model{
-    display: none; /*Hidden by default*/
-    position: fixed; /* Stay always on top*/
-    z-index: 99; /* Stay always on top*/
-    left: 0;
-    top: 0;
-    width:  100%; /* Full screen width*/
-    height: 100%; /* Full screen height*/
-    background-color: rgba(0,0,0,0.4);/* Black w/opacity */
-}
+
 .modal_content {
     background-color: #fefefe;
     margin: 2% auto 15% auto;
@@ -150,43 +163,46 @@ nav a {
     border: 1px solid #888888;
     width: 750px;
     height: 450px;
-    box-shadow: 6px 6px 6px rgba(0,0,0,-0.8);
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, -0.8);
     margin-top: 13%;
     border-radius: 20px;
-
-
-
 }
-.close{
+
+.close {
     float: right;
     margin-right: 10px;
     color: black;
     font-size: 50px;
     font-weight: normal;
-
-
 }
-.rules_title{
+
+.rules_title {
     color: black;
     margin-top: 8%;
     font-size: 32px;
 }
-.rules_paragraph{
+
+.rules_paragraph {
     color: black;
     font-size: 20px;
     margin-top: 4%;
 }
 
-.animate{
-    animation: animatezoom 0.5s; /* call animatezoom keyframes*/
+.animate {
+    animation: animatezoom 0.5s;
+    /* call animatezoom keyframes*/
 }
+
 /*@keyframes animatezoom {
     from{margin-left: 100%}
     to{margin-left: 0%}
 }*/
 @keyframes animatezoom {
-    from{transform: scale(0)}
-    to{transform: scale(1)}
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
 }
-
-

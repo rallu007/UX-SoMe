@@ -18,40 +18,31 @@
         <h1 class="title">Numbers</h1>
         <div class="info"><button type="button" onclick="document.getElementById('modal_id').style.display='block';" class="button_dialog"><img src="../images/info.png" alt="info" class="info_image"></button></div>
     </section>
-<!--    title section ends -->
-<!--    here is the place of the random number container-->
+    <!--    title section ends -->
+    <!--    here is the place of the random number container-->
     <div class="game_container">
         <p id="demo" class="random_number scale-in-center"></p>
     </div>
-<!--    here it ends -->
-<!--refresh page button-->
+    <!--    here it ends -->
+    <!--refresh page button-->
     <button onClick="window.location.reload();" class="button_draw">Draw a number</button>
-
-<!--end of refreshing page button-->
-
-<!--  Java generate random number  -->
+    <!--end of refreshing page button-->
+    <!--  Java generate random number  -->
     <script>
         document.getElementById("demo").innerHTML =
             Math.floor(Math.random() * 100);
     </script>
-<!--dialog starts-->
+    <!--dialog starts-->
     <div id="modal_id" class="modal animate">
-
         <div class="modal_content">
-                    <span onclick="document.getElementById('modal_id').style.display='none';" class="close">&times;</span>
-
+            <span onclick="document.getElementById('modal_id').style.display='none';" class="close">&times;</span>
             <h1 class="rules_title">How to play</h1>
             <p class="rules_paragraph">Are you lucky and will drink for free? Or the fate will let you down and you will pay for the others?
-<br><br>
-Get a random number, the lowest one is paying. Simple as that. The more players, the higher chance for win. Good luck!</p>
+                <br><br>
+                Get a random number, the lowest one is paying. Simple as that. The more players, the higher chance for win. Good luck!</p>
             <p class="rules_players">Minimum players: 2</p>
 
         </div>
-<!--dialog ends-->
-
-
+        <!--dialog ends-->
     </div>
-
-
-            </body>
-            </html>
+</body></html>
