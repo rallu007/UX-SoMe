@@ -21,7 +21,7 @@
 <div class="box"></div>
 
     </div>
-    <div class="timeleft">Time left: <span id="countdown">2:00</span></div>
+    <div class="timeleft">Time left: <span id="countdown">02:00</span></div>
     <div class="next" onclick="decideFunction();">NEXT</div>
 </section>
 </main>
@@ -95,28 +95,28 @@ goNext.addEventListener('click', function() {
 
 
 //       COUNTDOWN
-       const startingMinutes = 2;
-       let time = startingMinutes * 60;
+          function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
 
-       const countdownEl = document.getElementById('countdown');
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
 
-       setInterval(updateCountdown, 1000);
+        display.textContent = minutes + ":" + seconds;
 
-       function updateCountdown() {
-           const minutes = Math.floor(time / 60);
-           let seconds = time % 60;
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
 
-           seconds = seconds < 2 ? '0' + seconds : seconds;
-
-           countdownEl.innerHTML = `${minutes}: ${seconds}`;
-
-           time--;
-       }
-//        if (distance < 0) {
-//    clearInterval(setInterval);
-//    document.getElementById("countdown").innerHTML = "EXPIRED";
-//  }
-
+window.onload = function () {
+    var fiveMinutes = 60 * 2,
+        display = document.querySelector('#countdown');
+    startTimer(fiveMinutes, display);
+};
 
         </script>
     </body>
