@@ -1,76 +1,62 @@
-*,
-*:after,
-*:before {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-
-}
-
-/* COLORS
-#242424 - dark grey
-#ff5050 - red
-#595959 - lighter grey
-*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.body {
+.body_homepage {
+    background-color: #242424;
+    color: white;
     font-family: vista-sans, sans-serif;
-
+    font-style: normal;
 }
 
-.intro {
+.title_homepage {
     text-align: center;
-    padding-top: 240px;
+    font-size: 50px;
 }
 
-.text {
-    padding-right: 560px;
-    font-size: 35px;
-    font-weight: lighter;
+.title_section {}
+
+.menu_options_section {
+    display: flex;
 }
 
-.tonight {
-    padding-left: 870px;
-    font-size: 35px;
-    font-weight: lighter;
+.div {
+    height: 480px;
+    width: 650px;
+    margin-left: 20px;
+    border-radius: 20px;
+    margin-top: 5%;
 }
 
-.buddy {
-    font-weight: bolder;
-    font-size: 60px;
+.games_div {
+    background-color: #ffa41b;
+    margin-left:36px;
 }
 
-.banner_container {
+.music_div {
+    background-color: #ff5151;
+}
+
+.events_div {
+    background-color: #9818d6;
+    margin-right: 36px;
+}
+
+.title_div {
+    text-align: center;
+    font-family: vista-sans, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 22%;
+
+
+}
+
+.icon {
     position: relative;
-    max-height: 640px;
-}
+    margin-left: 23%;
+    width: 160px;
+    height: 160px;
+    margin-top: 30%;
 
-.btn_container {
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    z-index: 1;
 }
-
-.btn {
-    color: #00F7FF;
-    font-size: 14px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: monospace;
+a{
     text-decoration: none;
-    
-}
-
-.btn:hover {
-    background-color: #C608D1;
+    color: white;
 }
