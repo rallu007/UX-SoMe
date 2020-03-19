@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  text-align: center;
+  font-size: 200px;
+
+}
+</style>
+</head>
+<body>
+
+<span id="time">01:00</span>
+
+<script>
+
+    function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes = 60 * 1,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
+
+
+    </script>
+<!--
+    <div id="counter">10</div>
+ <script type="text/javascript">
+function countdown() {
+    var i = document.getElementById('counter');
+    i.innerHTML = parseInt(i.innerHTML)-1;
+    if (parseInt(i.innerHTML)==0) {
+       clearInterval(timerId);
+    }
+}
+var timerId = setInterval(function(){ countdown(); },1000);
+</script>
+-->
+
+</body>
+</html>
