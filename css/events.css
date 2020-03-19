@@ -3,7 +3,7 @@
 #242424 - dark grey
 #FFA41B - orange
 #595959 - lighter grey
-
+#9818d6 - purple
 */
 
 body {
@@ -13,7 +13,7 @@ body {
 /*MAIN*/
 
 main {
-    background-color: #ffa41b;
+    background-color: #9818d6;
     height: 510px; /*important*/
     -webkit-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
     -moz-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
@@ -23,7 +23,7 @@ main {
 }
 
 
-.games_sections {
+.events_sections {
     display: flex;
     justify-content: space-around;
     margin: 0 30px;
@@ -47,26 +47,50 @@ section h2 {
     font-size: 40px;
     text-align: center;
     margin: 20px;
-    color: black;
 }
 
 section img {
     height: 270px;
-    margin: 40px auto;
+    margin: 40px auto 20px auto;
     display: block;
+    margin-top: 0px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 section h3 {
     text-align: center;
     font-weight: 500;
-    color: black;
 }
 
+section h4 {
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 28px;
+}
 
+section h5 {
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+section h6 {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    margin-bottom: 35px;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
 /*MENU*/
 
 .menu_item {
-    background-color: #ffa41b;
+    background-color: #9818d6;
     display: inline-block;
     width: 29.5%;
     height: 120px;
@@ -82,6 +106,7 @@ section h3 {
 
 .menu_games {
     margin-left: 40px;
+    background-color: #595959;
 }
 
 .menu_music {
@@ -90,7 +115,7 @@ section h3 {
 
 .menu_events {
     margin-right: 0;
-    background-color: #595959;
+    background-color: #9818d6;
 }
 
 nav a {
