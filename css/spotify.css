@@ -41,6 +41,8 @@ main {
     display: flex;
     justify-content: center;
     height: 510px;
+        transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
 }
 
 .spotify iframe {

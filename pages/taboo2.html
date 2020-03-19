@@ -22,7 +22,7 @@
     <div class="h2_container"><h2 class="mainword"></h2></div>
 <div class="box"></div>
     </div>
-    <div class="timeleft">Time left: <span id="countdown">2:00</span></div>
+    <div class="timeleft">Time left: <span id="countdown">02:00</span></div>
     <div class="next" onclick="decideFunction();">NEXT</div>
 </section>
 </main>
@@ -92,23 +92,46 @@ goNext.addEventListener('click', function() {
 
 
 //       COUNTDOWN
-       const startingMinutes = 2;
-       let time = startingMinutes * 60;
+//       const startingMinutes = 2;
+//       let time = startingMinutes * 60;
+//
+//       const countdownEl = document.getElementById('countdown');
+//
+//       setInterval(updateCountdown, 1000);
+//
+//       function updateCountdown() {
+//           const minutes = Math.floor(time / 60);
+//           let seconds = time % 60;
+//
+//           seconds = seconds < 2 ? '0' + seconds : seconds;
+//
+//           countdownEl.innerHTML = `${minutes}: ${seconds}`;
+//
+//           time--;
+//       }
 
-       const countdownEl = document.getElementById('countdown');
+       function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
 
-       setInterval(updateCountdown, 1000);
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
 
-       function updateCountdown() {
-           const minutes = Math.floor(time / 60);
-           let seconds = time % 60;
+        display.textContent = minutes + ":" + seconds;
 
-           seconds = seconds < 2 ? '0' + seconds : seconds;
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
 
-           countdownEl.innerHTML = `${minutes}: ${seconds}`;
-
-           time--;
-       }
+window.onload = function () {
+    var fiveMinutes = 60 * 2,
+        display = document.querySelector('#countdown');
+    startTimer(fiveMinutes, display);
+};
 
         </script>
             <div id="modal_id" class="modal animate">
