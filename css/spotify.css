@@ -20,9 +20,8 @@ body {
 
 .info {
     position: absolute;
-    margin-bottom: 3px;
-    right: 0;
-    margin-right: 50px;
+    left: 92%;
+    top: 4%;
 }
 
 /*MAIN*/
