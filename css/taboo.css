@@ -95,6 +95,17 @@ body {
     padding: 20px;
 }
 
+
+.mainword {
+    margin-top: 40px;
+    background-color: none;
+    font-size: 40px;
+    text-align: center;
+/*    background-color: #242424;*/
+    color: black;
+    padding: 20px;
+}
+
 /*TIME OVER*/
 
 .timeover {

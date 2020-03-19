@@ -18,15 +18,15 @@
 <main>
 <section>
    <div class="card_container">
-    <h2 class="mainword">Counter Strike</h2>
-    <p class="underline otherword" id="otherword">Game</p>
-    <p class="underline">Shoot</p>
-    <p class="underline">Gun</p>
-    <p class="underline">War</p>
-    <p>Terrorist</p>
+    <div class="h2_container"><h2 class="mainword"></h2></div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
     </div>
     <div class="timeleft">Time left: <span id="countdown">2:00</span></div>
-    <div class="next" onclick="decideFunction()">NEXT</div>
+    <div class="next" onclick="decideFunction();">NEXT</div>
     <div class="done"><a href="taboo3.html">Done</a></div>
 </section>
 </main>
@@ -46,44 +46,57 @@
 
 
        let generateMainWord = () => {
-           let mainWords = ["Counter Strike", "Ball", "Pirate", "Toilet", "Car"];
+           let mainWords = [
+               ["Counter Strike", "<br>", "Game", "<br>", "Shoot", "<br>", "Terrorist", "<br>", "Gun", "<br>", "War"],
+               ["Formula 1", "<br>", "Car", "<br>", "Race", "<br>", "Grand-Prix", "<br>", "Small", "<br>", "Fast"],
+                ["Minecraft", "<br>", "Squares", "<br>", "Game", "<br>", "PC", "<br>", "Cubes", "<br>", "Creative"],
+               ["Aftershave", "<br>", "Beard", "<br>", "Alcohol", "<br>", "Razer Blade", "<br>", "Face", "<br>", "Hair"],
+           ["NBA", "<br>", "Basketball", "<br>", "Sport", "<br>", "Ball", "<br>", "League", "<br>", "USA"]
+           ];
            let indexMainWords = Math.floor(Math.random() * mainWords.length);
            return mainWords[indexMainWords];
-       if (indexMainWords == "Ball") {
-           document.getElementById('otherword').innerHTML = "Hah";
-       }
-       }
 
-       let goNext = () => {
+           mtxt = document.getElementById('mainword');
+
+ for (let b=0; b<mainWords.length; b++){
+//     b.style.fontWeight = 500;
+
+ 	mtxt.innerHTML +=
+  + mainWords[b][0]
++ " "
+  + mainWords[b][1]
++ " "
+  + mainWords[b][2]
++ " "
+  + mainWords[b][3]
++ " "
++ mainWords[b][4]
++ " "
+    + mainWords[b][5]
++ " "
+
+ }
+       };
+
+              let nextPage = () => {
            window.location.href = "taboo3.html";
        }
 
-       var times = 0;
+       let goNext = document.querySelector('.next')
+let CountNextClicks = 0
 
-    var decideFunction = () => {
-        if(times === 0){
-            generateMainWord();
-            times++;
-        }
-        else if (times === 1) {
-             generateMainWord();
-            times++;
-        }
-        else if (times === 2) {
-             generateMainWord();
-            times++;
-        }
-        else if (times === 3) {
-             generateMainWord();
-            times++;
-        }
-        else {
-            goNext();
-        };
+goNext.addEventListener('click', function() {
+	CountNextClicks += 1
+	console.log(CountNextClicks)
+})
 
-    };
-
-
+       let decideFunction = () => {
+           if (CountNextClicks > 4){
+           nextPage();
+       } else {
+           myFunction();
+       };
+       };
 
 
 //       COUNTDOWN
@@ -104,6 +117,10 @@
 
            time--;
        }
+//        if (distance < 0) {
+//    clearInterval(setInterval);
+//    document.getElementById("countdown").innerHTML = "EXPIRED";
+//  }
 
         </script>
             <div id="modal_id" class="modal animate">
