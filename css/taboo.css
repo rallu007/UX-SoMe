@@ -33,22 +33,24 @@ body {
 .card_container {
     background-color: white;
     width: 50%;
+    height: 400px;
     margin: 50px auto 20px;
     border-radius: 15px;
 }
 
-.card_container h2 {
-    font-size: 40px;
-    text-align: center;
+/*
+.h2_container {
     background-color: #242424;
-    color: white;
-    padding: 20px;
+    height: 80px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    position: relative;
 }
+*/
 
 .card_container p {
-    padding: 20px;
+    margin-top: 30px;
+    height: 50px;
     text-align: center;
     font-size: 30px;
 }
@@ -80,6 +82,16 @@ body {
     font-weight: 500;
     margin-left: 15px;
     cursor: pointer;
+}
+
+#mainword {
+    margin-top: 40px;
+    background-color: none;
+    font-size: 40px;
+    text-align: center;
+/*    background-color: #242424;*/
+/*    color: white;*/
+    padding: 20px;
 }
 
 /*TIME OVER*/
