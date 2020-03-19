@@ -27,6 +27,10 @@ main {
     margin: 0 30px;
 }
 
+.events_sections h6 {
+    font-family: vista-sans;
+}
+
 section {
     background-color: white;
     height: 460px;
