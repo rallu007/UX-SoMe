@@ -20,8 +20,13 @@
     box-sizing: border-box;
 }
 
-.body {
+body {
     font-family: vista-sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    background-image: url(../images/background_welcoming_page.png);
+    color: white;
+    background-color: #242424;
 
 }
 
@@ -31,46 +36,38 @@
 }
 
 .text {
-    padding-right: 560px;
-    font-size: 35px;
-    font-weight: lighter;
+    padding-right: 500px;
+    font-size: 28px;
+    font-weight: 200;
+
 }
 
 .tonight {
-    padding-left: 870px;
-    font-size: 35px;
-    font-weight: lighter;
+    padding-left: 700px;
+    font-size: 28px;
+    font-weight: 200;
+
 }
 
 .buddy {
-    font-weight: bolder;
-    font-size: 60px;
+    font-size: 54px;
 }
 
 .banner_container {
     position: relative;
-    max-height: 640px;
+    margin-top: 8%;
 }
 
-.btn_container {
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    z-index: 1;
-}
 
 .btn {
-    color: #00F7FF;
-    font-size: 14px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: monospace;
-    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    border: 2px solid white;
+    border-radius: 100px;
+    background-color: #242424;
+    width: 300px;
+    height: 100px;
 
-}
 
-.btn:hover {
-    background-color: #C608D1;
+
 }
