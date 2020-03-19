@@ -35,11 +35,17 @@ section {
     width: 460px;
     margin: 25px 0;
     border-radius: 15px;
+        transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
 /*
         -webkit-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
     -moz-box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
     box-shadow: 0px 4px 19px -7px rgba(0, 0, 0, 0.43);
 */
+}
+
+.section:hover {
+    transform: scale(1.05);
 }
 
 section h2 {

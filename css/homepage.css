@@ -22,6 +22,12 @@
     margin-left: 20px;
     border-radius: 20px;
     margin-top: 5%;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.div:hover {
+    transform: scale(1.05);
 }
 
 .games_div {
