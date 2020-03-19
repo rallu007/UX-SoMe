@@ -1,0 +1,76 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+/* COLORS
+#242424 - dark grey
+#ff5050 - red
+#595959 - lighter grey
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: vista-sans, sans-serif;
+
+}
+
+.intro {
+    text-align: center;
+    padding-top: 240px;
+}
+
+.text {
+    padding-right: 560px;
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+.tonight {
+    padding-left: 870px;
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+.buddy {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.banner_container {
+    position: relative;
+    max-height: 640px;
+}
+
+.btn_container {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    z-index: 1;
+}
+
+.btn {
+    color: #00F7FF;
+    font-size: 14px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: monospace;
+    text-decoration: none;
+
+}
+
+.btn:hover {
+    background-color: #C608D1;
+}
