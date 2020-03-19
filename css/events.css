@@ -121,3 +121,72 @@ section h6 {
 nav a {
     display: block;
 }
+
+
+.modal{
+    display: none; /*Hidden by default*/
+    position: fixed; /* Stay always on top*/
+    z-index: 99; /* Stay always on top*/
+    left: 0;
+    top: 0;
+    width:  100%; /* Full screen width*/
+    height: 100%; /* Full screen height*/
+    background-color: rgba(0,0,0,0.4);/* Black w/opacity */
+}
+.model{
+    display: none; /*Hidden by default*/
+    position: fixed; /* Stay always on top*/
+    z-index: 99; /* Stay always on top*/
+    left: 0;
+    top: 0;
+    width:  100%; /* Full screen width*/
+    height: 100%; /* Full screen height*/
+    background-color: rgba(0,0,0,0.4);/* Black w/opacity */
+}
+.modal_content {
+    background-color: #fefefe;
+    margin: 2% auto 15% auto;
+    padding: 25px;
+    border: 1px solid #888888;
+    width: 750px;
+    height: 450px;
+    box-shadow: 6px 6px 6px rgba(0,0,0,-0.8);
+    margin-top: 13%;
+    border-radius: 20px;
+
+
+
+}
+.close{
+    float: right;
+    margin-right: 10px;
+    color: black;
+    font-size: 50px;
+    font-weight: normal;
+
+
+}
+.rules_title{
+    color: black;
+    margin-top: 8%;
+    font-size: 32px;
+}
+.rules_paragraph{
+    color: black;
+    font-size: 20px;
+    margin-top: 4%;
+}
+
+.animate{
+    animation: animatezoom 0.5s; /* call animatezoom keyframes*/
+}
+/*@keyframes animatezoom {
+    from{margin-left: 100%}
+    to{margin-left: 0%}
+}*/
+@keyframes animatezoom {
+    from{transform: scale(0)}
+    to{transform: scale(1)}
+}
+
+

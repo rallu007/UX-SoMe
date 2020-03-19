@@ -21,7 +21,7 @@
             <h4>LIVE MUSIC</h4>
             <h5>27/03/20 19:30</h5>
             <h5>Enjoy the friendly atmosphere with your friends and good music.</h5>
-            <h6>Read more...</h6>
+            <button type="button" onclick="document.getElementById('model_id').style.display='block';"> <h6>Read more...</h6></button>
         </section>
         <section class="beerpong_container">
 
@@ -29,7 +29,7 @@
             <h4>BEER PONG TOURNAMENT</h4>
             <h5>29/03/20 18:00</h5>
             <h5>Compete in the Beer Pong Tournament or come and watch. </h5>
-            <h6>Read more...</h6>
+            <button type="button" onclick="document.getElementById('modal_id').style.display='block';"> <h6>Read more...</h6></button>
         </section>
         </div>
     </main>
@@ -45,6 +45,48 @@
            <a href="events.html"><img src="../images/events_active.svg" alt="Games Icon Active"></a>
        </div>
     </nav>
+<!--dialog starts beerpong-->
+    <div id="modal_id" class="modal animate">
 
+        <div class="modal_content">
+                    <span onclick="document.getElementById('modal_id').style.display='none';" class="close">&times;</span>
+
+            <h1 class="rules_title">Beerpong Tournament</h1>
+            <p class="rules_paragraph">How good is your aim? Would you dare to risk your reputation over a game of beer pong?
+<br><br>
+It’s time for the beer pong tournament - and of course it's open to both Danish and international students!
+
+
+                <br><br>
+
+
+There is a 20 DKK participation fee - which helps us help you stay environmentally sound, as this covers the cost of all the
+cups for the whole tournament
+<br><br>
+2 persons per team. Sign up for the tournament by the bar.
+
+        </div>
+
+
+
+    </div>
+    <!--dialog ends-->
+    <!--dialog starts live music-->
+    <div id="model_id" class="modal animate">
+
+        <div class="modal_content">
+                    <span onclick="document.getElementById('model_id').style.display='none';" class="close">&times;</span>
+
+            <h1 class="rules_title">Live Music</h1>
+            <p class="rules_paragraph">Would you like to listen to the live music and grab a beer or two?<br><br>
+Come with your friends or even alone and enjoy good drinks and the good music. For this event we have a happy hour – between 20 and 21, two drinks inf the price of one!<br><br>
+Besides that, the enter is free! We hope to see you there!
+
+        </div>
+
+
+
+    </div>
+    <!--dialog ends-->
 </body>
 </html>
