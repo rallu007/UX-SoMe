@@ -5,7 +5,6 @@
 #595959 - lighter grey
 
 */
-
 body {
     background-color: #ffa41b;
 }
@@ -68,7 +67,8 @@ body {
     font-size: 30px;
     font-weight: 500;
     margin-left: 255px;
-    color: black;<
+    color: black;
+    <
 }
 
 .next {
@@ -90,9 +90,15 @@ body {
     background-color: none;
     font-size: 40px;
     text-align: center;
+<<<<<<< HEAD
+    /*    background-color: #242424;*/
+    /*    color: white;*/
+    padding: 60px;
+=======
 /*    background-color: #242424;*/
 /*    color: white;*/
     padding: 20px;
+>>>>>>> UX-SoMe/master
     z-index: 10;
     position: relative;
     line-height: 60px;
@@ -104,7 +110,7 @@ body {
     background-color: none;
     font-size: 40px;
     text-align: center;
-/*    background-color: #242424;*/
+    /*    background-color: #242424;*/
     color: black;
     padding: 20px;
     position: relative;
@@ -130,7 +136,8 @@ body {
     margin-top: 270px;
 }
 
-.timeover h1, .timeover h2 {
+.timeover h1,
+.timeover h2 {
     margin-bottom: 20px;
 }
 
@@ -158,31 +165,19 @@ body {
     font-weight: 500;
     text-transform: uppercase;
 }
-.rules_title_taboo{
+
+.rules_title_taboo {
     color: black;
     font-size: 30px;
     margin-top: 30px;
 }
-.rules_paragraph_taboo{
+
+.rules_paragraph_taboo {
     font-size: 20px;
     color: black;
 }
-.rules_players_taboo{
+
+.rules_players_taboo {
     color: black;
     font-size: 16px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

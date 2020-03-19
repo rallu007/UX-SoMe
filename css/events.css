@@ -126,6 +126,7 @@ nav a {
     display: block;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .modal{
     display: none; /*Hidden by default*/
     position: fixed; /* Stay always on top*/
@@ -147,6 +148,8 @@ nav a {
     background-color: rgba(0,0,0,0.4);/* Black w/opacity */
 }
 =======
+=======
+>>>>>>> UX-SoMe/master
 
 .modal {
     display: none;
@@ -182,6 +185,9 @@ nav a {
     /* Black w/opacity */
 }
 
+<<<<<<< HEAD
+>>>>>>> UX-SoMe/master
+=======
 >>>>>>> UX-SoMe/master
 .modal_content {
     background-color: #fefefe;
@@ -190,6 +196,7 @@ nav a {
     border: 1px solid #888888;
     width: 750px;
     height: 450px;
+<<<<<<< HEAD
 <<<<<<< HEAD
     box-shadow: 6px 6px 6px rgba(0,0,0,-0.8);
     margin-top: 13%;
@@ -200,18 +207,24 @@ nav a {
 }
 .close{
 =======
+=======
+>>>>>>> UX-SoMe/master
     box-shadow: 6px 6px 6px rgba(0, 0, 0, -0.8);
     margin-top: 13%;
     border-radius: 20px;
 }
 
 .close {
+<<<<<<< HEAD
+>>>>>>> UX-SoMe/master
+=======
 >>>>>>> UX-SoMe/master
     float: right;
     margin-right: 10px;
     color: black;
     font-size: 50px;
     font-weight: normal;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -222,12 +235,22 @@ nav a {
 
 .rules_title {
 >>>>>>> UX-SoMe/master
+=======
+}
+
+.rules_title {
+>>>>>>> UX-SoMe/master
     color: black;
     margin-top: 8%;
     font-size: 32px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .rules_paragraph{
+=======
+
+.rules_paragraph {
+>>>>>>> UX-SoMe/master
 =======
 
 .rules_paragraph {
@@ -238,15 +261,21 @@ nav a {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .animate{
     animation: animatezoom 0.5s; /* call animatezoom keyframes*/
 }
 =======
+=======
+>>>>>>> UX-SoMe/master
 .animate {
     animation: animatezoom 0.5s;
     /* call animatezoom keyframes*/
 }
 
+<<<<<<< HEAD
+>>>>>>> UX-SoMe/master
+=======
 >>>>>>> UX-SoMe/master
 /*@keyframes animatezoom {
     from{margin-left: 100%}
@@ -254,11 +283,14 @@ nav a {
 }*/
 @keyframes animatezoom {
 <<<<<<< HEAD
+<<<<<<< HEAD
     from{transform: scale(0)}
     to{transform: scale(1)}
 }
 
 =======
+=======
+>>>>>>> UX-SoMe/master
     from {
         transform: scale(0)
     }
@@ -267,4 +299,7 @@ nav a {
         transform: scale(1)
     }
 }
+<<<<<<< HEAD
+>>>>>>> UX-SoMe/master
+=======
 >>>>>>> UX-SoMe/master
