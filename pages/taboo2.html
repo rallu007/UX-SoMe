@@ -39,11 +39,11 @@
 
        let generateMainWord = () => {
            let mainWords = [
-               ["Counter Strike", "<br>", "Game", "<br>", "Shoot", "<br>", "Terrorist", "<br>", "Gun", "<br>", "War"],
-               ["Formula 1", "<br>", "Car", "<br>", "Race", "<br>", "Grand-Prix", "<br>", "Small", "<br>", "Fast"],
-                ["Minecraft", "<br>", "Squares", "<br>", "Game", "<br>", "PC", "<br>", "Cubes", "<br>", "Creative"],
-               ["Aftershave", "<br>", "Beard", "<br>", "Alcohol", "<br>", "Razer Blade", "<br>", "Face", "<br>", "Hair"],
-           ["NBA", "<br>", "Basketball", "<br>", "Sport", "<br>", "Ball", "<br>", "League", "<br>", "USA"]
+               ["Counter Strike <br> Game <br> Shoot <br> Terrorist <br> Gun <br> War"],
+               ["Formula 1 <br> Car <br> Race <br> Grand-Prix <br> Small <br> Fast"],
+                ["Minecraft <br> Squares <br> Game <br> PC <br> Cubes <br> Creative"],
+               ["Aftershave <br> Beard <br> Alcohol <br> Razer Blade <br> Face <br> Hair"],
+           ["NBA <br> Basketball <br> Sport <br> Ball <br> League <br> USA"]
            ];
            let indexMainWords = Math.floor(Math.random() * mainWords.length);
            return mainWords[indexMainWords];
@@ -89,6 +89,8 @@ goNext.addEventListener('click', function() {
            myFunction();
        };
        };
+
+
 
 
 //       COUNTDOWN

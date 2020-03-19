@@ -22,34 +22,34 @@
 
     </div>
     <div class="timeleft">Time left: <span id="countdown">02:00</span></div>
-    <div class="next" onclick="decideFunction();">NEXT</div>
+   <div class="next" onclick="decideFunction();">NEXT</div>
 </section>
 </main>
 
    <script>
-
-//       CHANGING WORDS
-        let myFunction = () => {
-     document.querySelector('.mainword').innerHTML = generateMainWord();
-
 //          document.querySelector('.otherword').innerHTML = generateOtherWord();
-        };
+        ;
 
 //       window.onclick = () => {
 //     document.querySelector('.mainword').innerHTML = generateRandomMainWord();
 //        };
 
+   //CHANGING WORDS
+        let myFunction = () => {
+     document.querySelector('.mainword').innerHTML = generateMainWord();
 
        let generateMainWord = () => {
            let mainWords = [
-               [`Purse`, `<br>`, `Bag`, `<br>`, `Small`, `<br>`, `Wallet`, `<br>`, `Handy`, `<br>`, `Little`],
-               ["Braid", "<br>", "Hair", "<br>", "Three", "<br>", "Brush", "<br>", "Divide", "<br>", "Horse"],
-                ["Mascara", "<br>", "Make-up", "<br>", "Eyes", "<br>", "Black", "<br>", "Eyelashes", "<br>", "Long"],
-               ["Bralette", "<br>", "Bra", "<br>", "Underwear", "<br>", "Boobs", "<br>", "Support", "<br>", "Fancy"],
-           ["Menstruation", "<br>", "Blood", "<br>", "Month", "<br>", "Tampon", "<br>", "Pad", "<br>", "Pain"]
+               ["Purse <br> Bag <br> Small <br> Wallet <br> Handy <br> Little"],
+               ["Braid <br> Hair <br> Three <br> Brush <br> Divide <br> Horse"],
+                ["Mascara <br> Make-up <br> Eyes <br> Black <br> Eyelashes <br> Long"],
+               ["Bralette <br> Bra <br> Underwear <br> Boobs <br> Support <br> Fancy"],
+           ["Menstruation <br> Blood <br> Month <br> Tampon <br> Pad <br> Pain"]
            ];
-           let indexMainWords = Math.floor(Math.random() * mainWords.length);
+
+          let indexMainWords = Math.floor(Math.random() * mainWords.length);
            return mainWords[indexMainWords];
+
 
            mtxt = document.getElementById('mainword');
 
@@ -84,6 +84,8 @@ goNext.addEventListener('click', function() {
 	CountNextClicks += 1
 	console.log(CountNextClicks)
 })
+
+
 
        let decideFunction = () => {
            if (CountNextClicks > 4){
