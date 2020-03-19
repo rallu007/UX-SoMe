@@ -46,16 +46,21 @@ body{
     margin-top: 3%;
 }
 .button_draw{
-    width: 300px;
-    height: 80px;
+    width: 410px;
+    height: 90px;
     background-color: #242424;
     color: white;
     font-size: 30px;
     position: absolute;
-    left: 34%;
+    left: 31%;
     top: 68%;
     border-radius: 15px;
     border: 2px solid #242424;
+    font-family: vista-sans;
+        color: white;
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
     font-family: vista-sans;
 }
 

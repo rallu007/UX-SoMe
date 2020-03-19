@@ -41,6 +41,9 @@
 }
 .start_text{
     color: white;
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
     font-family: vista-sans;
 }
 
