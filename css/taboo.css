@@ -92,9 +92,10 @@ body {
     text-align: center;
 /*    background-color: #242424;*/
 /*    color: white;*/
-    padding: 60px;
+    padding: 20px;
     z-index: 10;
     position: relative;
+    line-height: 60px;
 }
 
 
@@ -105,9 +106,10 @@ body {
     text-align: center;
 /*    background-color: #242424;*/
     color: black;
-    padding: 60px;
+    padding: 20px;
     position: relative;
     z-index: 10;
+    line-height: 60px;
 }
 
 .box {
@@ -117,7 +119,7 @@ body {
     height: 58px;
     width: 350px;
     position: absolute;
-    top: 182px;
+    top: 152px;
     left: 335px;
 }
 

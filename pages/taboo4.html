@@ -1,125 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <title>Taboo</title>
-        <link rel="stylesheet" href="../css/taboo.css" />
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="https://use.typekit.net/otf5qwy.css" />
-    </head>
-    <body>
-        <header>
-            <a href="games.html"><img src="../images/back.svg" alt="Back Arrow" /></a>
-            <img src="../images/male.svg" alt="Female Symbol" class="female-symbol">
-            <h1 class="taboo2_h1">guys' Round</h1>
-            <img src="../images/info.svg" alt="Info Icon" class="info-icon">
-        </header>
-<main>
-<section>
-   <div class="card_container">
-    <div class="h2_container"><h2 class="mainword" id="mainword"></h2></div>
-<div class="box"></div>
+    <meta charset="UTF-8" />
+    <title>Taboo</title>
+    <link rel="stylesheet" href="../css/taboo.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/otf5qwy.css" />
+</head>
 
-    </div>
-    <div class="timeleft">Time left: <span id="countdown">02:00</span></div>
-   <div class="next" onclick="decideFunction();">NEXT</div>
-</section>
-</main>
+<body>
+    <header>
+        <a href="games.html"><img src="../images/back.svg" alt="Back Arrow" /></a>
+        <img src="../images/male.svg" alt="Female Symbol" class="female-symbol">
+        <h1 class="taboo2_h1">guys' Round</h1>
+        <img src="../images/info.svg" alt="Info Icon" class="info-icon">
+    </header>
+    <main>
+        <section>
+            <div class="card_container">
+                <div class="h2_container">
+                    <h2 class="mainword" id="mainword"></h2>
+                </div>
+                <div class="box"></div>
 
-   <script>
-//          document.querySelector('.otherword').innerHTML = generateOtherWord();
-        ;
+            </div>
+            <div class="timeleft">Time left: <span id="countdown">02:00</span></div>
+            <div class="next" onclick="decideFunction();">NEXT</div>
+        </section>
+    </main>
 
-//       window.onclick = () => {
-//     document.querySelector('.mainword').innerHTML = generateRandomMainWord();
-//        };
-
-   //CHANGING WORDS
+    <script>
+        //CHANGING WORDS
         let myFunction = () => {
-     document.querySelector('.mainword').innerHTML = generateMainWord();
-
-       let generateMainWord = () => {
-           let mainWords = [
-               ["Purse <br> Bag <br> Small <br> Wallet <br> Handy <br> Little"],
-               ["Braid <br> Hair <br> Three <br> Brush <br> Divide <br> Horse"],
-                ["Mascara <br> Make-up <br> Eyes <br> Black <br> Eyelashes <br> Long"],
-               ["Bralette <br> Bra <br> Underwear <br> Boobs <br> Support <br> Fancy"],
-           ["Menstruation <br> Blood <br> Month <br> Tampon <br> Pad <br> Pain"]
-           ];
-
-          let indexMainWords = Math.floor(Math.random() * mainWords.length);
-           return mainWords[indexMainWords];
-
-
-           mtxt = document.getElementById('mainword');
-
- for (let b=0; b<mainWords.length; b++){
-//     b.style.fontWeight = 500;
-
- 	mtxt.innerHTML +=
-  + mainWords[b][0]
-+ " "
-  + mainWords[b][1]
-+ " "
-  + mainWords[b][2]
-+ " "
-  + mainWords[b][3]
-+ " "
-+ mainWords[b][4]
-+ " "
-    + mainWords[b][5]
-+ " "
-
- }
-       };
-
-              let nextPage = () => {
-           window.location.href = "taboo5.html";
-       }
-
-       let goNext = document.querySelector('.next')
-let CountNextClicks = 0
-
-goNext.addEventListener('click', function() {
-	CountNextClicks += 1
-	console.log(CountNextClicks)
-})
-
-
-
-       let decideFunction = () => {
-           if (CountNextClicks > 4){
-           nextPage();
-       } else {
-           myFunction();
-       };
-       };
-
-
-//       COUNTDOWN
-          function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--timer < 0) {
-            timer = duration;
+                document.querySelector('.mainword').innerHTML = generateMainWord();
         }
-    }, 1000);
-}
 
-window.onload = function () {
-    var fiveMinutes = 60 * 2,
-        display = document.querySelector('#countdown');
-    startTimer(fiveMinutes, display);
-};
+                let generateMainWord = () => {
+                    let mainWords = [
+                        ["Purse <br> Bag <br> Small <br> Wallet <br> Handy <br> Little"],
+                        ["Braid <br> Hair <br> Three <br> Brush <br> Divide <br> Horse"],
+                        ["Mascara <br> Make-up <br> Eyes <br> Black <br> Eyelashes <br> Long"],
+                        ["Bralette <br> Bra <br> Underwear <br> Boobs <br> Support <br> Fancy"],
+                        ["Menstruation <br> Blood <br> Month <br> Tampon <br> Pad <br> Pain"]
+                    ];
 
-        </script>
-    </body>
-</html>
+                    let indexMainWords = Math.floor(Math.random() * mainWords.length);
+                    return mainWords[indexMainWords];
+
+
+                    mtxt = document.getElementById('mainword');
+
+                    for (let b = 0; b < mainWords.length; b++) {
+                        //     b.style.fontWeight = 500;
+
+                        mtxt.innerHTML +=
+                            +mainWords[b][0] +
+                            " " +
+                            mainWords[b][1] +
+                            " " +
+                            mainWords[b][2] +
+                            " " +
+                            mainWords[b][3] +
+                            " " +
+                            mainWords[b][4] +
+                            " " +
+                            mainWords[b][5] +
+                            " "
+
+                    }
+                };
+
+                let nextPage = () => {
+                    window.location.href = "taboo5.html";
+                }
+
+                let goNext = document.querySelector('.next')
+                let CountNextClicks = 0
+
+                goNext.addEventListener('click', function() {
+                    CountNextClicks += 1
+                    console.log(CountNextClicks)
+                })
+
+
+
+                let decideFunction = () => {
+                    if (CountNextClicks > 4) {
+                        nextPage();
+                    } else {
+                        myFunction();
+                    };
+                };
+
+
+                //       COUNTDOWN
+                function startTimer(duration, display) {
+                    var timer = duration,
+                        minutes, seconds;
+                    setInterval(function() {
+                        minutes = parseInt(timer / 60, 10);
+                        seconds = parseInt(timer % 60, 10);
+
+                        minutes = minutes < 10 ? "0" + minutes : minutes;
+                        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                        display.textContent = minutes + ":" + seconds;
+
+                        if (--timer < 0) {
+                            timer = duration;
+                        }
+                    }, 1000);
+                }
+
+                window.onload = function() {
+                    var fiveMinutes = 60 * 2,
+                        display = document.querySelector('#countdown');
+                    startTimer(fiveMinutes, display);
+                };
+    </script>
+</body></html>
